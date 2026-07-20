@@ -8,7 +8,7 @@ public:
 
         // Previous Smaller Element
         for (int i = 0; i < n; i++) {
-            while (!st.empty() && heights[st.top()] >= heights[i]) {
+            while (st.size()>0 && heights[st.top()] >= heights[i]) {
                 st.pop();
             }
 
@@ -27,7 +27,7 @@ public:
 
         // Next Smaller Element
         for (int i = n - 1; i >= 0; i--) {
-            while (!st.empty() && heights[st.top()] >= heights[i]) {
+            while (st.size()>0 && heights[st.top()] >= heights[i]) {
                 st.pop();
             }
 
