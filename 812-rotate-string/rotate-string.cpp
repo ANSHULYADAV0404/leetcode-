@@ -6,7 +6,7 @@ public:
         }
         string cant = s + s;
 
-        if (cant.find(goal) != string::npos) {
+        if (cant.contains(goal)) {
             return true;
         } else {
             return false;
